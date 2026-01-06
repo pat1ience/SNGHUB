@@ -1,382 +1,366 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap");
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background: #000000;
-    font-family: "Geologica", sans-serif;
-    color: white;
+  background: #000000;
+  font-family: "Geologica", sans-serif;
+  color: white;
 }
 
 .container {
-    width: 1323px;
-    margin: 0 auto;
+  max-width: 1323px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* header */
 
 .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #1a1a1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #1a1a1a;
 }
 .header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .title {
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
 }
 .title span {
-    color: rgb(217, 141, 0);
+  color: rgb(217, 141, 0);
 }
 .header__nav {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 .header__nav-item {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: .2s;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.2s;
 }
 .header__nav-item:hover {
-    opacity: .7;
+  opacity: 0.7;
 }
 .active {
-    font-size: 19px;
-    color: rgb(217, 141, 0);
+  font-size: 19px;
+  color: rgb(217, 141, 0);
 }
-
-/* 1. Планшеты (до 992px) */
-@media (max-width: 992px) {
-    .header__nav {
-        gap: 15px;
-    }
-    .header__nav-item {
-        font-size: 15px;
-    }
-}
-/* 2. Маленькие планшеты и большие телефоны (до 768px) */
-@media (max-width: 768px) {
-    .header__inner {
-        flex-direction: column; /* Логотип сверху, меню снизу */
-        gap: 15px;
-        text-align: center;
-    }
-    
-    .header__nav {
-        justify-content: center;
-        width: 100%;
-    }
-}
-/* 3. Смартфоны (до 480px) */
-@media (max-width: 480px) {
-    .header {
-        width: 480px;
-    }
-    .container {
-        width: 100%;
-    }
-    .header__nav {
-        flex-direction: column; /* Меню в колонку (списком) */
-        gap: 10px;
-    }
-    
-    .header__nav-item {
-        font-size: 18px; /* Увеличиваем размер для удобства нажатия пальцем */
-        padding: 5px 0;
-    }
-    
-    .title {
-        font-size: 26px;
-    }
-}
-
 
 .s1-title {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #e4e4e4;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #e4e4e4;
 }
 .s1-suptitle {
-    color: #b6b6b6;
-    font-size: 20px;
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Ноутбуки и планшеты (до 992px) */
-@media (max-width: 992px) {
-    .s1-title {
-        font-size: 32px; /* Уменьшаем заголовок */
-    }
-    .s1-suptitle {
-        font-size: 18px;
-        max-width: 90%; /* На планшетах даем тексту больше места */
-    }
-}
-
-/* Маленькие планшеты и смартфоны (до 768px) */
-@media (max-width: 768px) {
-    .s1-title {
-        font-size: 28px;
-        margin-top: 15px;
-    }
-    .s1-suptitle {
-        font-size: 16px;
-    }
-}
-
-/* Маленькие смартфоны (до 480px) */
-@media (max-width: 480px) {
-    .s1-title {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    .s1-suptitle {
-        font-size: 14px;
-        line-height: 1.4;
-    }
+  color: #b6b6b6;
+  font-size: 20px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* block */
 .block_video-img {
-    width: 323px;
-    height: 181px;
-    object-fit: cover;
-    object-position: right;
-    border-radius: 8px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .content_videos {
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 34px;
-    column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
 }
 .block_video {
-    cursor: pointer; 
-    transition: .3s;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .block_video:hover {
-    opacity: .7;
+  opacity: 0.7;
 }
 .block__video-avtorIcon {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .block__video-avtorIcon img {
-    width: 10px;
-    height: 12px;
+  width: 10px;
+  height: 12px;
 }
 .block__video-avtor {
-    font-size: 12.3px;
-    color: #c6c6c6c8;
-    margin-top: -4px;
+  font-size: 12.3px;
+  color: #c6c6c6c8;
+  margin-top: -4px;
 }
 .block__video-title {
-    font-size: 15px;
-    color: #C6C6C6;
-    width: 266px;
+  font-size: 15px;
+  color: #c6c6c6;
+  width: 266px;
 }
-.img10, .img15 {
-    object-position: bottom;
+.img10,
+.img15 {
+  object-position: bottom;
 }
 .img12 {
-    object-position: left top;
+  object-position: left top;
 }
-
-/* Планшеты (от 600px до 1024px) */
-@media (max-width: 1024px) {
-    .content_videos {
-        grid-template-columns: repeat(2, 1fr); /* Строго 2 колонки */
-        gap: 15px;
-    }
-}
-
-/* Смартфоны (до 600px) */
-@media (max-width: 600px) {
-    .container {
-        width: 480px;
-        margin: 0 auto;
-    }
-    .content_videos {
-        grid-template-columns: 1fr; /* 1 колонка на весь экран */
-        gap: 25px;
-        width: 480px;
-        margin: 0 auto;
-    }
-    .block_video {
-        margin: 0 auto;
-    }
-
-    .block_video-img {
-        height: 210px; /* На мобильных картинки можно сделать чуть крупнее */
-    }
-
-    .block__video-title {
-        font-size: 16px; /* Текст чуть крупнее для удобства */
-    }
-}
-
-/* Специфические настройки для ваших картинок */
-.img10, .img15 { object-position: bottom; }
-.img12 { object-position: left top; }
-
 
 #mainVideo {
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
 }
 
 .socials {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .socials__title {
-    padding: 20px 40px 20px 20px;
-    text-decoration: none;
-    border-radius: 20px;
-    width: 550px;
-    font-size: 25px;
-    color: rgb(215, 154, 0);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border: 1px solid orange;
-    margin: 20px auto 0 auto;
-    transition: .3s;
-    position: relative;
-    text-align: center;
-    /* margin-top: 20px; */
+  padding: 20px 40px 20px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  max-width: 550px;
+  width: 100%;
+  font-size: 25px;
+  color: rgb(215, 154, 0);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid orange;
+  margin: 20px auto 0 auto;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
 }
 .socials__title:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .socials__title img {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 20px;
-}
-
-/* Планшеты (до 768px) */
-@media (max-width: 768px) {
-    .socials__title {
-        font-size: 20px; /* Уменьшаем шрифт */
-        padding: 15px 45px 15px 15px;
-    }
-}
-
-/* Смартфоны (до 480px) */
-@media (max-width: 480px) {
-    .socials {
-        width: 480px;
-    }
-    .socials__title {
-        width: 333px;
-        font-size: 16px; /* Оптимально для узких экранов */
-        border-radius: 15px;
-        padding: 12px 40px 12px 10px;
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-    
-    .socials__title img {
-        width: 20px; /* Уменьшаем иконку, чтобы не мешала тексту */
-        height: 20px;
-        right: 10px;
-    }
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 20px;
 }
 
 .player__title {
-    font-size: 25px;
-    padding-bottom: 20px;
-    width: 600px;
-    margin: 0 auto;
-    color: #C6C6C6;
+  font-size: 25px;
+  padding-bottom: 20px;
+  width: 600px;
+  margin: 0 auto;
+  color: #c6c6c6;
 }
 
 .player__callme {
-    text-align: center;
-    color: rgb(245, 180, 0);
-    padding-bottom: 20px;
+  text-align: center;
+  color: rgb(245, 180, 0);
+  padding-bottom: 20px;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-    padding-bottom: 20px;
-    font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
 }
 
 .page-numbers {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .pag-btn {
-    background-color: #1a1a1a; /* Темный фон кнопок */
-    color: #ffffff;
-    border: none;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s;
+  background-color: #1a1a1a; /* Темный фон кнопок */
+  color: #ffffff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .content_videos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Сетка */
-    gap: 20px;
-    min-height: 600px; /* Минимальная высота, чтобы футер не прыгал вверх */
-    scroll-margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Сетка */
+  gap: 20px;
 }
 
 /* Стили для кнопок (из предыдущего ответа) */
 .pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
 }
 
 .pag-btn {
-    background: #1a1a1a;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 4px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
 .pag-btn.active {
-    color: #ffd000; /* Голубой цвет текста активной кнопки */
+  color: #ffd000; /* Голубой цвет текста активной кнопки */
 }
 
 .next-btn {
-    background: #ff9900;
-    color: black;
+  background: #ff9900;
+  color: black;
+}
+
+@media (max-width: 768px) {
+
+   .player__title {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 10px 15px;
+  }
+
+  .player-container p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .player-container a {
+    word-break: break-all;
+  } 
+
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .header__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header__nav-item {
+    font-size: 16px;
+  }
+
+  .s1-title {
+    font-size: 26px;
+  }
+
+  .s1-suptitle {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .block__video-title {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .socials__title {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .socials__title img {
+    right: 15px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .player__title {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+    .player__title {
+    font-size: 18px;
+  }
+
+  #mainVideo {
+    max-height: 260px;
+  }
+
+  .player__callme {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+    .socials__title {
+    font-size: 16px;
+    padding: 15px 45px 15px 15px;
+  }
+
+  .socials__title img {
+    width: 22px;
+    height: 22px;
+    right: 12px;
+  }
+
+  .s1-title {
+    font-size: 22px;
+  }
+
+  .s1-suptitle {
+    font-size: 14px;
+  }
+
+  .block_video-img {
+    height: 160px;
+  }
+
+  .pag-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
 }
