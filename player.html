@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр видео</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; }
+        .player-container { max-width: 900px; margin: 20px auto; }
+        video { width: 100%; border: 2px solid #333; }
+        h1 { margin-top: 20px; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/index.html" class="title">SNG<span>HUB</span></a>
+                <div class="header__nav">
+                    <a href="#" class="header__nav-item active">Кыргызское|Казахское</a>
+                    <a href="#" class="header__nav-item">Узбекское</a>
+                    <a href="#" class="header__nav-item">Международное</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="socials">
+        <div class="container">
+            <a href="https://t.me/+CJ0cFBGbDTM0ZTdi" target="_blank" class="socials__title">
+                Подпишись на наш телеграм канал 
+                <img src="/images/icon.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="player-container">
+            <h1 class="player__title" id="videoTitle">Загрузка...</h1>
+            <video id="mainVideo" controls>
+                <source src="#">
+            </video>
+            <p>🔥 Достор, Толугу телеграм каналда, катталып койгула!</p>
+            <p>👉 Күндөгө сонун кыздар жана VIP видео Telegram-каналда чыгат. - <a target="_blank" href="https://t.me/+CJ0cFBGbDTM0ZTdi">https://t.me/+CJ0cFBGbDTM0ZTdi</a></p>
+        </div>
+        <a href="https://t.me/anxcva" class="player__callme" target="_blank">Мен менен байланыш</a>
+
+        <div class="content_videos">
+            <!-- 1 -->
+            <div class="block_video" data-id="1" data-video="videos/1.mp4">
+                <img class="block_video-img" src="/images/1.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Жаш кыз, суйлошкон жигитине озун сылап жонотуп атат</p>
+            </div>
+            <!-- 2 -->
+            <div class="block_video" data-id="2" data-video="/videos/2 .mp4">
+                <img class="block_video-img" src="/images/2.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Чечинбей эле кызды бат баттан сигип атат</p>
+            </div>  
+            <!-- 3 -->
+            <div class="block_video" data-id="3" data-video="/videos/3.mp4">
+                <img class="block_video-img" src="/images/3.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">жаш суйлошкон кызын, кинодон кийин сигип атат</p>
+            </div>  
+            <!-- 4 -->
+            <div class="block_video" data-id="4" data-video="/videos/4.mp4">
+                <img class="block_video-img" src="/images/4.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">куйосу чыдавай, эшикте каарда эле сигип атат</p>
+            </div>  
+            <!-- 5 -->
+            <div class="block_video" data-id="5" data-video="/videos/5.mp4">
+                <img class="block_video-img" src="/images/5.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Коптон бери суйлошуп жургон кызын, жакшы ракурста сигип атат</p>
+            </div>  
+            <!-- 6 -->
+            <div class="block_video" data-id="6" data-video="/videos/6.mp4">
+                <img class="block_video-img" src="/images/6.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Жигитине обещать эткен минетин жасап берип атат</p>
+            </div> 
+            <!-- 7 -->
+            <div class="block_video" data-id="7" data-video="/videos/7.mp4">
+                <img class="block_video-img" src="/images/7.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Коптон беери сигише элек пара экен</p>
+            </div> 
+            <!-- 8 -->
+            <div class="block_video" data-id="8" data-video="/videos/8.mp4">
+                <img class="block_video-img" src="/images/8.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Айылда болгон сигиш, аялын коптон беери кандыра элек</p>
+            </div> 
+            <!-- 9 -->
+            <div class="block_video" data-id="9" data-video="/videos/9.mp4">
+                <img class="block_video-img" src="/images/9.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Суйлошкон кызы биринчи жолу корушу..</p>
+            </div>
+            <!-- 10 -->
+            <div class="block_video" data-id="10" data-video="/videos/10.mp4">
+                <img class="block_video-img img10" src="/images/10.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Чон кото менен, сулуу амды сигип атат</p>
+            </div>
+            <!-- 11 -->
+            <div class="block_video" data-id="11" data-video="/videos/11.mp4">
+                <img class="block_video-img" src="/images/11.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Кородо эле сигишип атышат, жаны место издеп табышты</p>
+            </div>
+            <!-- 12 -->
+            <div class="block_video" data-id="12" data-video="/videos/12.mp4">
+                <img class="block_video-img img12" src="/images/12.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Корпоративтен кийин, кызды сигип атат роль ойноп</p>
+            </div>
+            <!-- 13 -->
+            <div class="block_video" data-id="13" data-video="/videos/13.mp4">
+                <img class="block_video-img" src="/images/13.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Жаш кыз, жигитине минет кылып берип атат</p>
+            </div>
+            <!-- 14 -->
+            <div class="block_video" data-id="14" data-video="/videos/14.mp4">
+                <img class="block_video-img" src="/images/14.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Коптон беери боло элек окшойт буларда</p>
+            </div>
+            <!-- 15 -->
+            <div class="block_video" data-id="15" data-video="/videos/15.mp4">
+                <img class="block_video-img img15" src="/images/15.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Жоон котогу менен, ичке амына кирип атат</p>
+            </div>
+            <!-- 16 -->
+            <div class="block_video" data-id="16" data-video="/videos/16.mp4">
+                <img class="block_video-img " src="/images/16.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Кызын суранып атып, машинада кылып корушту</p>
+            </div>
+            <!-- 17 -->
+            <div class="block_video" data-id="17" data-video="/videos/17.mp4">
+                <img class="block_video-img " src="/images/17.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Мед академияда окуган кыз, балага минет кылып берип атат</p>
+            </div>
+            <!-- 18 -->
+            <div class="block_video" data-id="18" data-video="/videos/18.mp4">
+                <img class="block_video-img " src="/images/18.png" alt="">
+                <div class="block__video-avtorIcon">
+                    <p class="block__video-avtor">admin</p>
+                    <img src="/images/channel-badge.svg.svg" alt="">
+                </div>      
+                <p class="block__video-title">Спордон утулуп, кызы минет кылып берип атат машинада</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Скрипт читает данные из URL (то, что после знака ?)
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get('title');
+        const src = urlParams.get('src');
+
+        // Подставляем данные на страницу
+        if (title) {
+            document.getElementById('videoTitle').innerText = title;
+        }
+        if (src) {
+            const video = document.getElementById('mainVideo');
+            video.src = src;
+        }
+    </script>
+</body>
+</html>

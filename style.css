@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #000000;
+    font-family: "Geologica", sans-serif;
+    color: white;
+}
+
+.container {
+    width: 1323px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #1a1a1a;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.title span {
+    color: rgb(217, 141, 0);
+}
+.header__nav {
+    display: flex;
+    gap: 15px;
+}
+.header__nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: .2s;
+}
+.header__nav-item:hover {
+    opacity: .7;
+}
+.active {
+    font-size: 19px;
+    color: rgb(217, 141, 0);
+}
+
+/* 1. Планшеты (до 992px) */
+@media (max-width: 992px) {
+    .header__nav {
+        gap: 15px;
+    }
+    .header__nav-item {
+        font-size: 15px;
+    }
+}
+/* 2. Маленькие планшеты и большие телефоны (до 768px) */
+@media (max-width: 768px) {
+    .header__inner {
+        flex-direction: column; /* Логотип сверху, меню снизу */
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .header__nav {
+        justify-content: center;
+        width: 100%;
+    }
+}
+/* 3. Смартфоны (до 480px) */
+@media (max-width: 480px) {
+    .header {
+        background: none;
+    }
+    .header__nav {
+        flex-direction: column; /* Меню в колонку (списком) */
+        gap: 10px;
+    }
+    
+    .header__nav-item {
+        font-size: 18px; /* Увеличиваем размер для удобства нажатия пальцем */
+        padding: 5px 0;
+    }
+    
+    .title {
+        font-size: 26px;
+    }
+}
+
+
+.s1-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #e4e4e4;
+}
+.s1-suptitle {
+    color: #b6b6b6;
+    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* block */
+.block_video-img {
+    width: 323px;
+    height: 181px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 8px;
+}
+.content_videos {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 34px;
+    column-gap: 10px;
+}
+.block_video {
+    cursor: pointer; 
+    transition: .3s;
+}
+.block_video:hover {
+    opacity: .7;
+}
+.block__video-avtorIcon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.block__video-avtorIcon img {
+    width: 10px;
+    height: 12px;
+}
+.block__video-avtor {
+    font-size: 12.3px;
+    color: #c6c6c6c8;
+    margin-top: -4px;
+}
+.block__video-title {
+    font-size: 15px;
+    color: #C6C6C6;
+    width: 266px;
+}
+.img10, .img15 {
+    object-position: bottom;
+}
+.img12 {
+    object-position: left top;
+}
+#mainVideo {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.socials {
+    padding-bottom: 10px;
+}
+.socials__title {
+    padding: 20px 40px 20px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 550px;
+    font-size: 25px;
+    color: rgb(215, 154, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid orange;
+    margin: 20px auto 0 auto;
+    transition: .3s;
+    position: relative;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+.socials__title:hover {
+    transform: scale(1.1);
+}
+.socials__title img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+}
+
+.player__title {
+    font-size: 25px;
+    padding-bottom: 20px;
+    width: 600px;
+    margin: 0 auto;
+    color: #C6C6C6;
+}
+
+.player__callme {
+    text-align: center;
+    color: rgb(245, 180, 0);
+    padding-bottom: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.pag-btn {
+    background-color: #1a1a1a; /* Темный фон кнопок */
+    color: #ffffff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.content_videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Сетка */
+    gap: 20px;
+    min-height: 600px; /* Минимальная высота, чтобы футер не прыгал вверх */
+    scroll-margin-top: 100px;
+}
+
+/* Стили для кнопок (из предыдущего ответа) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.pag-btn {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.pag-btn.active {
+    color: #ffd000; /* Голубой цвет текста активной кнопки */
+}
+
+.next-btn {
+    background: #ff9900;
+    color: black;
+}
